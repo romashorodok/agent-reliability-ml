@@ -1,0 +1,61 @@
+{
+  "dataset_name": "agent_failure_taxonomy",
+  "version": 1,
+  "total_rows": 1776,
+  "train_rows": 1489,
+  "test_rows": 287,
+  "train_groups": 335,
+  "test_groups": 84,
+  "label_mapping": {
+    "0": "workflow_error",
+    "1": "constraint_error",
+    "2": "tool_use_error",
+    "3": "grounding_state_error",
+    "4": "reasoning_value_error"
+  },
+  "train_distribution": {
+    "0": 660,
+    "1": 317,
+    "2": 237,
+    "3": 244,
+    "4": 31
+  },
+  "test_distribution": {
+    "0": 138,
+    "1": 70,
+    "2": 38,
+    "3": 30,
+    "4": 11
+  },
+  "key_columns": [
+    "dataset",
+    "group_id",
+    "message_index"
+  ],
+  "text_columns": [
+    "current_text",
+    "context_text"
+  ],
+  "structured_features": [
+    "current_role",
+    "current_tool",
+    "previous_tool",
+    "message_index",
+    "is_tool_call",
+    "current_char_length",
+    "current_word_count",
+    "context_char_length",
+    "context_word_count",
+    "previous_messages",
+    "previous_tool_calls",
+    "previous_assistant_messages",
+    "parsed_tool_calls_in_context",
+    "same_tool_as_previous",
+    "current_tool_previous_count",
+    "current_action_seen_before",
+    "previous_results_have_error",
+    "context_has_error_signal",
+    "has_previous_tool_result",
+    "has_previous_tool_call"
+  ]
+}
