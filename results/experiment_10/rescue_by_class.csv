@@ -1,0 +1,6 @@
+failure_family,support,semantic_correct,structured_only_correct,stack_rescues,stack_breaks
+workflow_error,138,76,15,10,7
+constraint_error,70,43,5,3,6
+tool_use_error,38,10,4,1,0
+grounding_state_error,30,13,5,2,3
+reasoning_value_error,11,6,0,0,0

@@ -1,0 +1,2 @@
+comparison,observed_delta_macro_f1,bootstrap_mean_delta,ci_2.5,ci_97.5,probability_delta_positive
+stacked_minus_semantic,0.0023283769888785,0.002172609994601125,-0.02974011876504365,0.033789680500534845,0.5534

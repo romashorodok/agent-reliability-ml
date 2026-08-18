@@ -1,0 +1,5 @@
+case,count,percentage
+both_correct,97,33.79790940766551
+semantic_only_correct,51,17.770034843205575
+structured_only_correct,29,10.104529616724738
+both_wrong,110,38.32752613240418
