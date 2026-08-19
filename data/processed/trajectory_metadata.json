@@ -1,0 +1,39 @@
+{
+  "dataset_name": "agent_failure_trajectory_sequences",
+  "version": 1,
+  "total_events": 4591,
+  "total_targets": 1776,
+  "train_events": 3792,
+  "test_events": 799,
+  "train_targets": 1489,
+  "test_targets": 287,
+  "train_groups": 335,
+  "test_groups": 84,
+  "label_mapping": {
+    "0": "workflow_error",
+    "1": "constraint_error",
+    "2": "tool_use_error",
+    "3": "grounding_state_error",
+    "4": "reasoning_value_error"
+  },
+  "event_roles": {
+    "TOOL_CALL": 2760,
+    "ASSISTANT": 1831
+  },
+  "history_definition": "For target event t, model history is all events with the same canonical_group and message_index < target message_index.",
+  "recommended_first_sequence_features": [
+    "event_role",
+    "primary_tool",
+    "has_error_signal",
+    "char_length",
+    "word_count",
+    "relative_event_position"
+  ],
+  "annotation_columns_not_for_model_input": [
+    "raw_step_label",
+    "raw_step_reason",
+    "family_label",
+    "failure_family",
+    "is_taxonomy_target"
+  ]
+}
